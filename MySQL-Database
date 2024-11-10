@@ -285,7 +285,8 @@ VALUES
 (70, 42, 17, '2024-11-24', '11:45:00', 'Scheduled', 'Pediatric assessment for Jackson'); 
 
 -- Inserting data in the Billing table
-
+INSERT INTO Billing (Billing_ID, Appointment_ID, Patient_ID, Total_Amount, Payment_Method, Billing_Date, Payment_Status)
+VALUES
 (1, 1, 1, 250.00, 'Credit Card', '2024-11-01', 'Paid'),
 (2, 2, 2, 300.00, 'Cash', '2024-11-02', 'Unpaid'),
 (3, 3, 3, 200.00, 'Insurance', '2024-11-03', 'Paid'),
@@ -358,7 +359,8 @@ VALUES
 (69, 70, 42, 250.00, 'Insurance', '2024-11-24', 'Paid');   
 
 -- Insertion of data in the Laboratory table
-
+INSERT INTO Laboratory (Lab_Test_ID, Patient_ID, Appointment_ID, Test_Type, Test_Date, Test_Charges, Test_Result)
+VALUES
 (1, 1, 1, 'Blood Test', '2024-11-01', 50.00, 'Normal'),
 (2, 2, 2, 'X-Ray', '2024-11-02', 75.00, 'Fracture detected'),
 (3, 3, 3, 'Urine Test', '2024-11-03', 30.00, 'No abnormalities'),
